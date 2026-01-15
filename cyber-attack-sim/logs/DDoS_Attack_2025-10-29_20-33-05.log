@@ -1,0 +1,29 @@
+============================================================
+Attack Type: DDoS
+Timestamp: 2025-10-29_20-33-05
+Target: :5000
+============================================================
+
+[20:32:55] 🔴 ATTACK INITIATED: DDoS (Distributed Denial of Service)
+[20:32:55] Target: Victim Server (:5000)
+[20:32:55] Attack Pattern: 5 waves × 100 requests/wave
+[20:32:55] Wave 1/5: Sending 100 HTTP GET requests...
+[20:32:55] Wave 1 Complete: 0 successful (0.0%), 100 blocked, 0 timeout
+[20:32:57] Wave 2/5: Sending 100 HTTP GET requests...
+[20:32:57] Wave 2 Complete: 0 successful (0.0%), 100 blocked, 0 timeout
+[20:32:59] Wave 3/5: Sending 100 HTTP GET requests...
+[20:32:59] Wave 3 Complete: 0 successful (0.0%), 100 blocked, 0 timeout
+[20:33:01] Wave 4/5: Sending 100 HTTP GET requests...
+[20:33:01] Wave 4 Complete: 0 successful (0.0%), 100 blocked, 0 timeout
+[20:33:03] Wave 5/5: Sending 100 HTTP GET requests...
+[20:33:03] Wave 5 Complete: 0 successful (0.0%), 100 blocked, 0 timeout
+[20:33:05] 
+==================================================
+[20:33:05] 📊 ATTACK SUMMARY
+[20:33:05] ==================================================
+[20:33:05] Total Requests: 500
+[20:33:05] Successful: 0 (0.0%)
+[20:33:05] Blocked by Firewall: 500
+[20:33:05] Timeout: 0
+[20:33:05] 
+⏱️  Attack Duration: 10.06 seconds

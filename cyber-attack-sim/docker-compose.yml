@@ -1,56 +1,1 @@
-services:
-  # Victim Web Application (Vulnerable)
-  victim:
-    build: ./victim
-    container_name: victim_server
-    networks:
-      attack_net:
-        ipv4_address: 172.20.0.10
-    ports:
-      - "8080:5000"
-    environment:
-      - FLASK_ENV=development
-    volumes:
-      - ./logs:/app/logs
-
-  # Attacker Machine
-  attacker:
-    build: ./attacker
-    container_name: attacker_machine
-    networks:
-      attack_net:
-        ipv4_address: 172.20.0.100
-    cap_add:
-      - NET_ADMIN
-      - NET_RAW
-    privileged: true
-    depends_on:
-      - victim
-    volumes:
-      - ./logs:/app/logs
-
-  # Controller (Web GUI)
-  controller:
-    build: ./controller
-    container_name: controller_gui
-    networks:
-      attack_net:
-        ipv4_address: 172.20.0.5
-    ports:
-      - "5000:5000"
-    depends_on:
-      - attacker
-      - victim
-    volumes:
-      - ./logs:/app/logs
-    environment:
-      - ATTACKER_IP=172.20.0.100
-      - VICTIM_IP=172.20.0.10
-
-networks:
-  attack_net:
-    driver: bridge
-    ipam:
-      config:
-        - subnet: 172.20.0.0/16
-          gateway: 172.20.0.1
+services:  controller:    build: ./controller    container_name: cyber_controller    ports:      - "5000:5000"    networks:      attack_net:        ipv4_address: 172.20.0.5    volumes:      - ./logs:/app/logs      - /var/run/docker.sock:/var/run/docker.sock  # falls du Docker-Monitoring nutzt    environment:      - FLASK_ENV=development      - VICTIM_IP=${VICTIM_IP:-172.20.0.10}      - ATTACKER_IP=${ATTACKER_IP:-172.20.0.100}      - VICTIM_CONTAINER_NAME=cyber_victim    restart: unless-stopped    security_opt:      - no-new-privileges:true    cap_drop:      - ALL    cap_add:      - NET_BIND_SERVICE    depends_on:      - victim    dns:      - 8.8.8.8      - 8.8.4.4  attacker:    build: ./attacker    container_name: cyber_attacker    networks:      attack_net:        ipv4_address: 172.20.0.100    volumes:      - ./logs:/app/logs    environment:      - VICTIM_IP=${VICTIM_IP:-172.20.0.10}    depends_on:      - victim    security_opt:      - no-new-privileges:true    cap_drop:      - ALL    stdin_open: true    tty: true    dns:      - 8.8.8.8      - 8.8.4.4  victim:    build: ./victim    container_name: cyber_victim    networks:      attack_net:        ipv4_address: 172.20.0.10    volumes:      - ./logs:/app/logs    environment:      - FLASK_ENV=development      - RATE_LIMIT=${RATE_LIMIT:-100}      - BLOCK_DURATION=${BLOCK_DURATION:-300}      - BLOCK_THRESHOLD=${BLOCK_THRESHOLD:-3}      - CRASH_THRESHOLD=${CRASH_THRESHOLD:-500}    restart: unless-stopped    security_opt:      - no-new-privileges:true    cap_drop:      - ALL    cap_add:      - NET_BIND_SERVICE    dns:      - 8.8.8.8      - 8.8.4.4networks:  attack_net:    driver: bridge    ipam:      config:        - subnet: 172.20.0.0/24          gateway: 172.20.0.1volumes:  logs:    driver: local

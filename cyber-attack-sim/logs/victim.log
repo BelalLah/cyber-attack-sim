@@ -1,0 +1,702 @@
+2025-10-29 20:07:31,000 - Victim - INFO - Firewall initialized - Rate limit: 100 req/min
+2025-10-29 20:07:31,008 - Victim - INFO - Database initialized with sample data
+2025-10-29 20:07:31,009 - Victim - INFO - ============================================================
+2025-10-29 20:07:31,009 - Victim - INFO - Vulnerable Web Server Starting
+2025-10-29 20:07:31,010 - Victim - INFO - ============================================================
+2025-10-29 20:07:31,010 - Victim - INFO - 🛡️  Firewall Status: ACTIVE
+2025-10-29 20:07:31,010 - Victim - INFO -    - Rate limit: 100 req/min
+2025-10-29 20:07:31,010 - Victim - INFO -    - Block threshold: 3 violations
+2025-10-29 20:07:31,010 - Victim - INFO -    - Block duration: 300s
+2025-10-29 20:07:31,010 - Victim - INFO -    - SQL injection detection: ENABLED
+2025-10-29 20:07:31,011 - Victim - INFO -    - XSS detection: ENABLED
+2025-10-29 20:07:31,011 - Victim - INFO - ============================================================
+2025-10-29 20:07:31,014 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.0.10:5000
+2025-10-29 20:07:31,014 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-29 20:07:47,761 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:47] "GET /firewall/stats HTTP/1.1" 200 -
+2025-10-29 20:07:50,950 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:50] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:50,954 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:50] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:50,955 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:50] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:50,957 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:50] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:50,959 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:50] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:50,961 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:50] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:50,962 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:50] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:50,964 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:50] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:50,965 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:50] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:50,967 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:50] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:50,968 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:50] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:50,973 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:50] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:50,974 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:50] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:50,976 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:50] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:50,977 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:50] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:50,978 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:50] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:50,979 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:50] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:50,980 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:50] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:50,990 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:50] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:50,995 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:50] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:50,997 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:50] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:50,998 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:50] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:50,999 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:50] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,001 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,002 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,004 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,005 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,006 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,007 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,014 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,016 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,017 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,018 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,019 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,020 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,022 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,026 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,027 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,028 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,029 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,031 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,032 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,034 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,036 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,037 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,039 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,040 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,041 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,042 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,044 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,045 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,046 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,047 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,048 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,049 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,051 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,052 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,053 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,054 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,058 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,059 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,061 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,063 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,065 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,066 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,070 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,072 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,073 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,074 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,076 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,077 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,079 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,083 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,084 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,085 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,087 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,088 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,089 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,090 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,094 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,096 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,097 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,099 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,100 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,101 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,102 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,103 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,105 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,106 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,107 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,110 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,118 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,119 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,121 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,122 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,123 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,124 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,125 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,126 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,128 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET / HTTP/1.1" 200 -
+2025-10-29 20:07:51,130 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:51] "GET /firewall/alerts HTTP/1.1" 200 -
+2025-10-29 20:07:53,133 - Victim - WARNING - 🚨 FIREWALL ALERT: RATE LIMIT EXCEEDED: 172.20.0.5 (101 req/min)
+2025-10-29 20:07:53,133 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:53] "[31m[1mGET / HTTP/1.1[0m" 429 -
+2025-10-29 20:07:53,135 - Victim - WARNING - 🚨 FIREWALL ALERT: RATE LIMIT EXCEEDED: 172.20.0.5 (102 req/min)
+2025-10-29 20:07:53,135 - werkzeug - INFO - 172.20.0.5 - - [29/Oct/2025 20:07:53] "[31m[1mGET / HTTP/1.1[0m" 429 -
+2025-10-29 20:07:53,136 - Victim - WARNING - 🚨 FIREWALL ALERT: RATE LIMIT EXCEEDED: 172.20.0.5 (103 req/min)
+2026-01-04 17:33:26,897 - Victim - INFO - Firewall initialized - Rate limit: 100 req/min
+2026-01-04 17:33:27,030 - Victim - INFO - Database initialized with sample data
+2026-01-04 17:33:27,036 - Victim - INFO - ============================================================
+2026-01-04 17:33:27,036 - Victim - INFO - Vulnerable Web Server Starting
+2026-01-04 17:33:27,036 - Victim - INFO - ============================================================
+2026-01-04 17:33:27,036 - Victim - INFO - 🛡️  Firewall Status: ACTIVE
+2026-01-04 17:33:27,036 - Victim - INFO -    - Rate limit: 100 req/min
+2026-01-04 17:33:27,036 - Victim - INFO -    - Block threshold: 3 violations
+2026-01-04 17:33:27,036 - Victim - INFO -    - Block duration: 300s
+2026-01-04 17:33:27,036 - Victim - INFO -    - SQL injection detection: ENABLED
+2026-01-04 17:33:27,036 - Victim - INFO -    - XSS detection: ENABLED
+2026-01-04 17:33:27,037 - Victim - INFO - ============================================================
+2026-01-04 17:33:27,043 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.0.10:5000
+2026-01-04 17:33:27,043 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-04 17:34:08,513 - Victim - WARNING - 🚨 FIREWALL ALERT: XSS DETECTED: 172.20.0.5 | Pattern: <script>alert('XSS')</script>
+2026-01-04 17:34:08,542 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 17:34:08] "[31m[1mPOST /search HTTP/1.1[0m" 403 -
+2026-01-04 17:34:09,553 - Victim - WARNING - 🚨 FIREWALL ALERT: XSS DETECTED: 172.20.0.5 | Pattern: onerror=
+2026-01-04 17:34:09,553 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 17:34:09] "[31m[1mPOST /search HTTP/1.1[0m" 403 -
+2026-01-04 17:34:10,557 - Victim - WARNING - 🚨 FIREWALL ALERT: XSS DETECTED: 172.20.0.5 | Pattern: onload=
+2026-01-04 18:52:03,612 - Victim - INFO - Firewall initialized - Rate limit: 100 req/min
+2026-01-04 18:52:03,624 - Victim - INFO - Database initialized with sample data
+2026-01-04 18:52:03,626 - Victim - INFO - ============================================================
+2026-01-04 18:52:03,626 - Victim - INFO - Vulnerable Web Server Starting
+2026-01-04 18:52:03,626 - Victim - INFO - ============================================================
+2026-01-04 18:52:03,626 - Victim - INFO - 🛡️  Firewall Status: ACTIVE
+2026-01-04 18:52:03,626 - Victim - INFO -    - Rate limit: 100 req/min
+2026-01-04 18:52:03,626 - Victim - INFO -    - Block threshold: 3 violations
+2026-01-04 18:52:03,626 - Victim - INFO -    - Block duration: 300s
+2026-01-04 18:52:03,626 - Victim - INFO -    - SQL injection detection: ENABLED
+2026-01-04 18:52:03,626 - Victim - INFO -    - XSS detection: ENABLED
+2026-01-04 18:52:03,626 - Victim - INFO - ============================================================
+2026-01-04 18:52:03,634 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.0.10:5000
+2026-01-04 18:52:03,634 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-04 18:52:11,662 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:52:11] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:52:17,096 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:52:17] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:52:22,095 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:52:22] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:52:27,094 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:52:27] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:52:32,098 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:52:32] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:52:37,101 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:52:37] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:52:42,096 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:52:42] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:52:47,117 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:52:47] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:52:52,117 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:52:52] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:52:57,118 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:52:57] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:53:02,117 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:53:02] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:53:07,117 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:53:07] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:53:12,120 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:53:12] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:53:17,120 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:53:17] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:53:22,118 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:53:22] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:53:27,119 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:53:27] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:53:32,120 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:53:32] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:53:37,613 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:53:37] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:53:42,612 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:53:42] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:53:47,776 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:53:47] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:53:52,770 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:53:52] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:53:57,823 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:53:57] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:54:02,822 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:54:02] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:54:07,903 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:54:07] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:54:12,901 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:54:12] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:54:17,902 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:54:17] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:54:22,901 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:54:22] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:54:27,922 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:54:27] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:54:32,910 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:54:32] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:54:37,910 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:54:37] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:54:43,092 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:54:43] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:54:48,101 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:54:48] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:54:53,103 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:54:53] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:54:58,102 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:54:58] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:55:03,102 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:55:03] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:55:08,102 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:55:08] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:55:13,449 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:55:13] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:55:18,448 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:55:18] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:55:23,449 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:55:23] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:55:28,448 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:55:28] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:55:33,452 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:55:33] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:55:38,449 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:55:38] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:55:43,449 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:55:43] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:55:48,450 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:55:48] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:55:53,450 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:55:53] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:55:58,451 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:55:58] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:56:03,450 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:56:03] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:56:08,451 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:56:08] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 18:56:13,451 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 18:56:13] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:01:42,022 - Victim - INFO - Firewall initialized: rate_limit=100/min, block_threshold=3
+2026-01-04 19:01:42,037 - Victim - INFO - Victim server starting with brute-force & overload detection enabled
+2026-01-04 19:01:42,037 - Victim - INFO - Login form available at: http://localhost:5000/login-form
+2026-01-04 19:01:42,042 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.0.10:5000
+2026-01-04 19:01:42,042 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-04 19:01:44,747 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:01:44] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:01:55,623 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:01:55] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:02:00,639 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:02:00] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:02:52,737 - Victim - INFO - Firewall initialized: rate_limit=100/min, block_threshold=3
+2026-01-04 19:02:52,744 - Victim - INFO - Victim server starting with brute-force & overload detection enabled
+2026-01-04 19:02:52,744 - Victim - INFO - Login form available at: http://localhost:5000/login-form
+2026-01-04 19:02:52,749 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.0.10:5000
+2026-01-04 19:02:52,749 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2026-01-04 19:02:57.602139] Login attempt from 172.20.0.5, query=SELECT * FROM users WHERE username='admin' AND password='123456'
+2026-01-04 19:02:57,602 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:02:57] "POST /login HTTP/1.1" 200 -
+[2026-01-04 19:02:57.909283] Login attempt from 172.20.0.5, query=SELECT * FROM users WHERE username='admin' AND password='password'
+2026-01-04 19:02:57,909 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:02:57] "POST /login HTTP/1.1" 200 -
+[2026-01-04 19:02:58.213398] Login attempt from 172.20.0.5, query=SELECT * FROM users WHERE username='admin' AND password='admin'
+2026-01-04 19:02:58,214 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:02:58] "POST /login HTTP/1.1" 200 -
+[2026-01-04 19:02:58.518237] Login attempt from 172.20.0.5, query=SELECT * FROM users WHERE username='admin' AND password='admin123'
+2026-01-04 19:02:58,518 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:02:58] "POST /login HTTP/1.1" 200 -
+[2026-01-04 19:02:58.821316] Login attempt from 172.20.0.5, query=SELECT * FROM users WHERE username='admin' AND password='pass123'
+2026-01-04 19:02:58,821 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:02:58] "POST /login HTTP/1.1" 200 -
+[2026-01-04 19:02:59.124790] Login attempt from 172.20.0.5, query=SELECT * FROM users WHERE username='user1' AND password='123456'
+2026-01-04 19:02:59,125 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:02:59] "POST /login HTTP/1.1" 200 -
+[2026-01-04 19:02:59.428871] Login attempt from 172.20.0.5, query=SELECT * FROM users WHERE username='user1' AND password='password'
+2026-01-04 19:02:59,429 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:02:59] "POST /login HTTP/1.1" 200 -
+[2026-01-04 19:02:59.733025] Login attempt from 172.20.0.5, query=SELECT * FROM users WHERE username='user1' AND password='admin'
+2026-01-04 19:02:59,733 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:02:59] "POST /login HTTP/1.1" 200 -
+[2026-01-04 19:03:00.036675] Login attempt from 172.20.0.5, query=SELECT * FROM users WHERE username='user1' AND password='admin123'
+2026-01-04 19:03:00,037 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:03:00] "POST /login HTTP/1.1" 200 -
+[2026-01-04 19:03:00.340036] Login attempt from 172.20.0.5, query=SELECT * FROM users WHERE username='user1' AND password='pass123'
+2026-01-04 19:03:00,340 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:03:00] "POST /login HTTP/1.1" 200 -
+2026-01-04 19:03:05,519 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:03:05] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:03:10,516 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:03:10] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:03:15,515 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:03:15] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:03:20,516 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:03:20] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:03:25,558 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:03:25] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:03:30,558 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:03:30] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:03:35,558 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:03:35] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:03:40,558 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:03:40] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:03:45,559 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:03:45] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:03:50,641 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:03:50] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:03:55,642 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:03:55] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:04:00,642 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:04:00] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:04:05,642 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:04:05] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:04:10,642 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:04:10] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:04:15,643 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:04:15] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:04:20,643 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:04:20] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:04:25,643 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:04:25] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:04:30,643 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:04:30] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:04:35,644 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:04:35] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:04:40,643 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:04:40] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:04:45,644 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:04:45] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:04:50,644 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:04:50] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:04:55,644 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:04:55] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:05:00,644 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:05:00] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:05:05,645 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:05:05] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:05:10,645 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:05:10] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:05:15,645 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:05:15] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:05:20,645 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:05:20] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:05:25,646 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:05:25] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:05:30,646 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:05:30] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:05:35,646 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:05:35] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:05:40,646 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:05:40] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:05:45,646 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:05:45] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:05:50,647 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:05:50] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:05:55,646 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:05:55] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:06:00,647 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:06:00] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:06:05,647 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:06:05] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:06:10,647 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:06:10] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:06:15,647 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:06:15] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:06:20,648 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:06:20] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:06:25,648 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:06:25] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:06:30,648 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:06:30] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:06:35,648 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:06:35] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:06:40,648 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:06:40] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:06:45,648 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:06:45] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:06:50,649 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:06:50] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:06:55,649 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:06:55] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:07:00,649 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:07:00] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:07:05,650 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:07:05] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:07:10,649 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:07:10] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:07:15,650 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:07:15] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:07:20,650 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:07:20] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:07:25,650 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:07:25] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:07:30,650 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:07:30] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:07:35,650 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:07:35] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:07:40,651 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:07:40] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:07:45,651 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:07:45] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:07:50,651 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:07:50] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:07:55,655 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:07:55] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:08:00,652 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:08:00] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:08:05,652 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:08:05] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:08:10,652 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:08:10] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:08:15,653 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:08:15] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:08:20,652 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:08:20] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:08:25,653 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:08:25] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:08:30,653 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:08:30] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:08:35,653 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:08:35] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:08:40,653 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:08:40] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:08:45,653 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:08:45] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:08:50,653 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:08:50] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:08:55,654 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:08:55] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:09:00,654 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:09:00] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:09:05,654 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:09:05] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:09:10,654 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:09:10] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:09:15,740 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:09:15] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:09:20,740 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:09:20] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:09:25,740 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:09:25] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:09:30,741 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:09:30] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:09:35,740 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:09:35] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:09:40,741 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:09:40] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:09:45,741 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:09:45] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:09:50,741 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:09:50] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:09:55,741 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:09:55] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:10:00,742 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:10:00] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:10:05,741 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:10:05] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:10:10,742 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:10:10] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:10:15,742 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:10:15] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:10:20,742 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:10:20] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:10:25,742 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:10:25] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:10:30,742 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:10:30] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:10:35,742 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:10:35] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:10:40,742 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:10:40] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:10:45,742 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:10:45] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:10:50,743 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:10:50] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:10:55,743 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:10:55] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:11:00,746 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:11:00] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:11:05,745 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:11:05] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:11:10,746 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:11:10] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:11:15,746 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:11:15] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:11:20,746 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:11:20] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:11:25,746 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:11:25] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:11:30,746 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:11:30] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:11:35,746 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:11:35] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:11:40,747 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:11:40] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:11:45,747 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:11:45] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:11:50,747 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:11:50] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:11:55,748 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:11:55] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:12:00,748 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:12:00] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:12:05,748 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:12:05] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:12:10,748 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:12:10] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:12:15,748 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:12:15] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:12:20,748 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:12:20] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:12:25,748 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:12:25] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:12:30,749 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:12:30] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:12:35,749 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:12:35] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:12:40,749 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:12:40] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:12:45,749 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:12:45] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:12:50,749 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:12:50] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:12:55,749 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:12:55] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:13:00,750 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:13:00] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:13:05,750 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:13:05] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:13:10,750 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:13:10] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:13:15,750 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:13:15] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:13:20,751 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:13:20] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:13:25,751 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:13:25] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:13:30,751 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:13:30] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:13:35,751 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:13:35] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:13:40,760 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:13:40] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:13:45,751 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:13:45] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:13:50,753 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:13:50] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:13:55,934 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:13:55] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:14:00,935 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:14:00] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:14:05,936 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:14:05] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:14:09,498 - werkzeug - INFO - 172.20.0.1 - - [04/Jan/2026 19:14:09] "GET /login-form HTTP/1.1" 200 -
+2026-01-04 19:14:09,682 - werkzeug - INFO - 172.20.0.1 - - [04/Jan/2026 19:14:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-04 19:14:10,939 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:14:10] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:14:15,940 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:14:15] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:14:20,939 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:14:20] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:14:25,938 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:14:25] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:14:29,238 - Victim - WARNING - ALERT: SQL injection detected from 172.20.0.1, pattern=(\bOR\b|\bAND\b).*=.*
+2026-01-04 19:14:29,239 - werkzeug - INFO - 172.20.0.1 - - [04/Jan/2026 19:14:29] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2026-01-04 19:14:30,938 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:14:30] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:14:35,938 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:14:35] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:14:40,232 - Victim - WARNING - ALERT: SQL injection detected from 172.20.0.1, pattern=(\bOR\b|\bAND\b).*=.*
+2026-01-04 19:14:40,232 - werkzeug - INFO - 172.20.0.1 - - [04/Jan/2026 19:14:40] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2026-01-04 19:14:40,938 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:14:40] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:14:45,938 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:14:45] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:14:47,294 - Victim - WARNING - ALERT: SQL injection detected from 172.20.0.1, pattern=#
+2026-01-04 19:14:47,294 - Victim - WARNING - ALERT: IP BLACKLISTED: 172.20.0.1 for 300s
+2026-01-04 19:14:47,294 - werkzeug - INFO - 172.20.0.1 - - [04/Jan/2026 19:14:47] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2026-01-04 19:14:49,120 - werkzeug - INFO - 172.20.0.1 - - [04/Jan/2026 19:14:49] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2026-01-04 19:14:50,941 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:14:50] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:14:54,396 - werkzeug - INFO - 172.20.0.1 - - [04/Jan/2026 19:14:54] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2026-01-04 19:14:55,733 - werkzeug - INFO - 172.20.0.1 - - [04/Jan/2026 19:14:55] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2026-01-04 19:14:55,939 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:14:55] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:15:00,939 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:15:00] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:15:05,939 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:15:05] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:15:09,103 - werkzeug - INFO - 172.20.0.1 - - [04/Jan/2026 19:15:09] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2026-01-04 19:15:10,346 - werkzeug - INFO - 172.20.0.1 - - [04/Jan/2026 19:15:10] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2026-01-04 19:15:10,940 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:15:10] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:15:15,940 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:15:15] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:15:17,003 - werkzeug - INFO - 172.20.0.1 - - [04/Jan/2026 19:15:17] "GET /login-form HTTP/1.1" 200 -
+2026-01-04 19:15:20,940 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:15:20] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:15:22,513 - werkzeug - INFO - 172.20.0.1 - - [04/Jan/2026 19:15:22] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2026-01-04 19:15:25,940 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:15:25] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:15:30,940 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:15:30] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:15:35,947 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:15:35] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:15:41,508 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:15:41] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:15:46,508 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:15:46] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:15:51,508 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:15:51] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:15:56,508 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:15:56] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:16:01,509 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:16:01] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:16:06,509 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:16:06] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:16:11,509 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:16:11] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:16:16,511 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:16:16] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:16:21,511 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:16:21] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:16:26,510 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:16:26] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:16:31,510 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:16:31] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:16:36,514 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:16:36] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:16:41,511 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:16:41] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:16:46,511 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:16:46] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:16:51,511 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:16:51] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:16:56,512 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:16:56] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:17:01,623 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:17:01] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:17:06,511 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:17:06] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:17:11,511 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:17:11] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:17:16,513 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:17:16] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:17:21,523 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:17:21] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:17:26,530 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:17:26] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:17:31,521 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:17:31] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:17:36,512 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:17:36] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:17:41,513 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:17:41] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:17:46,513 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:17:46] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:17:51,535 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:17:51] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:17:56,535 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:17:56] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:18:01,537 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:18:01] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:18:06,536 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:18:06] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:18:11,538 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:18:11] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:18:16,538 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:18:16] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:18:21,538 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:18:21] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:18:26,539 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:18:26] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:18:31,545 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:18:31] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:18:37,101 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:18:37] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:18:42,101 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:18:42] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:18:47,101 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:18:47] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:18:52,112 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:18:52] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:18:57,109 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:18:57] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:19:02,107 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:19:02] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:19:07,108 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:19:07] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:19:12,108 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:19:12] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:19:17,108 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:19:17] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:19:22,108 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:19:22] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:19:27,109 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:19:27] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:19:32,110 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:19:32] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:19:37,185 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:19:37] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:19:42,185 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:19:42] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:19:47,185 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:19:47] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:19:52,186 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:19:52] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:19:57,187 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:19:57] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:20:02,187 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:20:02] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:20:07,186 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:20:07] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:20:12,187 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:20:12] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:20:17,187 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:20:17] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:20:22,189 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:20:22] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:20:27,190 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:20:27] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:20:32,190 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:20:32] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:20:37,189 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:20:37] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:20:42,189 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:20:42] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:20:47,190 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:20:47] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:20:52,191 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:20:52] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:20:57,191 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:20:57] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:21:02,191 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:21:02] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:21:07,191 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:21:07] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:21:12,190 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:21:12] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:21:17,191 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:21:17] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:21:22,191 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:21:22] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:21:27,191 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:21:27] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:21:32,191 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:21:32] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:21:37,192 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:21:37] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:21:42,191 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:21:42] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:21:47,193 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:21:47] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:21:52,192 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:21:52] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:21:57,193 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:21:57] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:22:02,193 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:22:02] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:22:07,744 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:22:07] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:22:12,744 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:22:12] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:22:17,746 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:22:17] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:22:22,745 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:22:22] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:22:27,745 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:22:27] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:22:32,744 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:22:32] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:22:37,745 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:22:37] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:22:42,746 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:22:42] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:22:47,745 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:22:47] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:22:52,746 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:22:52] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:22:57,746 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:22:57] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:23:02,746 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:23:02] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:23:07,747 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:23:07] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:23:12,746 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:23:12] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:23:17,747 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:23:17] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:23:21,245 - Victim - INFO - Firewall initialized: rate_limit=100/min, block_threshold=3
+2026-01-04 19:23:22,747 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:23:22] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:23:27,748 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:23:27] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:23:32,747 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:23:32] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:23:37,747 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:23:37] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:23:42,749 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:23:42] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:23:47,747 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:23:47] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:23:52,747 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:23:52] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:23:57,748 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:23:57] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:24:02,748 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:24:02] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:24:07,748 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:24:07] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:24:12,748 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:24:12] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:24:17,750 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:24:17] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:24:22,749 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:24:22] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:24:27,749 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:24:27] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:24:32,749 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:24:32] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:24:37,749 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:24:37] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:24:42,749 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:24:42] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:24:47,749 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:24:47] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:24:52,750 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:24:52] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:24:57,750 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:24:57] "GET /firewall/stats HTTP/1.1" 200 -
+[2026-01-04 19:25:01.930698] Login attempt from 172.20.0.1, query=SELECT * FROM users WHERE username='user1' AND password='oass123'
+2026-01-04 19:25:01,940 - werkzeug - INFO - 172.20.0.1 - - [04/Jan/2026 19:25:01] "POST /login HTTP/1.1" 200 -
+2026-01-04 19:25:02,750 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:25:02] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:25:07,750 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:25:07] "GET /firewall/stats HTTP/1.1" 200 -
+[2026-01-04 19:25:09.771770] Login attempt from 172.20.0.1, query=SELECT * FROM users WHERE username='admin' AND password='admin123'
+2026-01-04 19:25:09,772 - werkzeug - INFO - 172.20.0.1 - - [04/Jan/2026 19:25:09] "POST /login HTTP/1.1" 200 -
+2026-01-04 19:25:12,750 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:25:12] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:25:17,751 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:25:17] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:25:22,750 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:25:22] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:25:27,750 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:25:27] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:25:32,752 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:25:32] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:25:37,751 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:25:37] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:25:38,798 - Victim - WARNING - ALERT: SQL injection detected from 172.20.0.1, pattern=(\bOR\b|\bAND\b).*=.*
+2026-01-04 19:25:38,798 - Victim - WARNING - ALERT: IP BLACKLISTED: 172.20.0.1 for 300s
+2026-01-04 19:25:38,799 - werkzeug - INFO - 172.20.0.1 - - [04/Jan/2026 19:25:38] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2026-01-04 19:25:42,751 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:25:42] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:25:48,571 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:25:48] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:25:53,582 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:25:53] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:25:58,574 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:25:58] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:26:03,575 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:26:03] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:26:08,572 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:26:08] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:26:13,573 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:26:13] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:26:18,943 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:26:18] "GET /firewall/stats HTTP/1.1" 200 -
+[2026-01-04 19:26:23.390390] Login attempt from 172.20.0.5, query=SELECT * FROM users WHERE username='admin' AND password='123456'
+2026-01-04 19:26:23,393 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:26:23] "POST /login HTTP/1.1" 200 -
+[2026-01-04 19:26:23.698184] Login attempt from 172.20.0.5, query=SELECT * FROM users WHERE username='admin' AND password='password'
+2026-01-04 19:26:23,698 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:26:23] "POST /login HTTP/1.1" 200 -
+[2026-01-04 19:26:24.004178] Login attempt from 172.20.0.5, query=SELECT * FROM users WHERE username='admin' AND password='admin'
+2026-01-04 19:26:24,004 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:26:24] "POST /login HTTP/1.1" 200 -
+[2026-01-04 19:26:24.308514] Login attempt from 172.20.0.5, query=SELECT * FROM users WHERE username='admin' AND password='admin123'
+2026-01-04 19:26:24,308 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:26:24] "POST /login HTTP/1.1" 200 -
+[2026-01-04 19:26:24.612144] Login attempt from 172.20.0.5, query=SELECT * FROM users WHERE username='admin' AND password='pass123'
+2026-01-04 19:26:24,612 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:26:24] "POST /login HTTP/1.1" 200 -
+[2026-01-04 19:26:24.915663] Login attempt from 172.20.0.5, query=SELECT * FROM users WHERE username='user1' AND password='123456'
+2026-01-04 19:26:24,916 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:26:24] "POST /login HTTP/1.1" 200 -
+[2026-01-04 19:26:25.220109] Login attempt from 172.20.0.5, query=SELECT * FROM users WHERE username='user1' AND password='password'
+2026-01-04 19:26:25,220 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:26:25] "POST /login HTTP/1.1" 200 -
+[2026-01-04 19:26:25.524403] Login attempt from 172.20.0.5, query=SELECT * FROM users WHERE username='user1' AND password='admin'
+2026-01-04 19:26:25,524 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:26:25] "POST /login HTTP/1.1" 200 -
+[2026-01-04 19:26:25.828668] Login attempt from 172.20.0.5, query=SELECT * FROM users WHERE username='user1' AND password='admin123'
+2026-01-04 19:26:25,829 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:26:25] "POST /login HTTP/1.1" 200 -
+[2026-01-04 19:26:26.132342] Login attempt from 172.20.0.5, query=SELECT * FROM users WHERE username='user1' AND password='pass123'
+2026-01-04 19:26:26,132 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:26:26] "POST /login HTTP/1.1" 200 -
+2026-01-04 19:26:28,941 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:26:28] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:26:33,941 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:26:33] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:26:38,942 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:26:38] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:26:43,974 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:26:43] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:26:48,976 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:26:48] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:26:53,973 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:26:53] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:26:58,974 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:26:58] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:27:03,977 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:27:03] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:27:08,974 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:27:08] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:27:13,974 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:27:13] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:27:18,975 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:27:18] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:27:23,975 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:27:23] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:27:28,975 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:27:28] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:27:33,975 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:27:33] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:27:38,163 - werkzeug - INFO - 172.20.0.1 - - [04/Jan/2026 19:27:38] "GET /login-form HTTP/1.1" 200 -
+2026-01-04 19:27:39,438 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:27:39] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:27:44,533 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:27:44] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:27:49,534 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:27:49] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:27:54,534 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:27:54] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:27:59,533 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:27:59] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:28:04,533 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:28:04] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:28:09,534 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:28:09] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:28:14,534 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:28:14] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:28:19,534 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:28:19] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:28:24,535 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:28:24] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:28:29,535 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:28:29] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:28:34,535 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:28:34] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:28:39,535 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:28:39] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:28:44,535 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:28:44] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:28:49,535 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:28:49] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:28:54,535 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:28:54] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:28:59,536 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:28:59] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:29:04,536 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:29:04] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:29:09,536 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:29:09] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:29:14,536 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:29:14] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:29:19,537 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:29:19] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:29:24,536 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:29:24] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:29:29,537 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:29:29] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:29:34,537 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:29:34] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:29:39,537 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:29:39] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:29:44,537 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:29:44] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:29:49,538 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:29:49] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:29:54,538 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:29:54] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:29:59,538 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:29:59] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:30:04,538 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:30:04] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:30:09,538 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:30:09] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:30:14,539 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:30:14] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:30:19,538 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:30:19] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:30:24,538 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:30:24] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:30:29,539 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:30:29] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:30:34,539 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:30:34] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:30:39,539 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:30:39] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:30:44,540 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:30:44] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:30:49,554 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:30:49] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:30:54,541 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:30:54] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:30:59,541 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:30:59] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:31:04,541 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:31:04] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:31:09,542 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:31:09] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:31:14,541 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:31:14] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:31:19,542 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:31:19] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:31:24,541 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:31:24] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:31:29,542 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:31:29] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:31:34,542 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:31:34] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:31:39,542 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:31:39] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:31:44,542 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:31:44] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:31:49,571 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:31:49] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:31:54,571 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:31:54] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:31:59,571 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:31:59] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:32:04,571 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:32:04] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:32:09,571 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:32:09] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:32:14,572 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:32:14] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:32:19,571 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:32:19] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:32:24,572 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:32:24] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:32:29,572 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:32:29] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:32:34,572 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:32:34] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:32:39,572 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:32:39] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:32:44,573 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:32:44] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:32:49,573 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:32:49] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:32:54,573 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:32:54] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:32:59,573 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:32:59] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:33:04,573 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:33:04] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:33:09,573 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:33:09] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:33:14,574 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:33:14] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:33:19,573 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:33:19] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:33:24,574 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:33:24] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:33:29,574 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:33:29] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:33:34,574 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:33:34] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:33:39,574 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:33:39] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:33:44,574 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:33:44] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:33:49,575 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:33:49] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:33:54,575 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:33:54] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:33:59,575 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:33:59] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:34:04,575 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:34:04] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:34:09,575 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:34:09] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:34:14,575 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:34:14] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:34:19,576 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:34:19] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:34:24,576 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:34:24] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:34:29,576 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:34:29] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:34:34,576 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:34:34] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:34:39,576 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:34:39] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:34:44,577 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:34:44] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:34:49,578 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:34:49] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:34:54,577 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:34:54] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:34:59,577 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:34:59] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:35:04,577 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:35:04] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:35:09,577 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:35:09] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:35:14,577 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:35:14] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:35:19,578 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:35:19] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:35:24,578 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:35:24] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:35:29,579 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:35:29] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:35:34,579 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:35:34] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:35:39,579 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:35:39] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:35:44,579 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:35:44] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:35:49,582 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:35:49] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:35:54,584 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:35:54] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:35:59,579 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:35:59] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:36:04,579 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:36:04] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:36:09,579 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:36:09] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:36:14,579 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:36:14] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:36:19,580 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:36:19] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:36:24,580 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:36:24] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:36:29,580 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:36:29] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:36:34,580 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:36:34] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:36:39,581 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:36:39] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:36:44,580 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:36:44] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:36:49,581 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:36:49] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:36:55,174 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:36:55] "GET /firewall/stats HTTP/1.1" 200 -
+2026-01-04 19:37:00,169 - werkzeug - INFO - 172.20.0.5 - - [04/Jan/2026 19:37:00] "GET /firewall/stats HTTP/1.1" 200 -

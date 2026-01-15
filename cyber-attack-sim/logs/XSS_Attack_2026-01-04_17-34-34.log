@@ -1,0 +1,35 @@
+============================================================
+Attack Type: XSS
+Timestamp: 2026-01-04_17-34-34
+Target: 172.20.0.10:5000
+============================================================
+
+[17:34:08] 🔴 ATTACK INITIATED: Cross-Site Scripting (XSS)
+[17:34:08] Target: Victim Server (172.20.0.10:5000/search)
+[17:34:08] 
+[Test 1/6] Basic Script Tag
+[17:34:08]    Payload: <script>alert('XSS')</script>
+[17:34:08]    🛡️  BLOCKED - Cross-site scripting pattern detected
+[17:34:09] 
+[Test 2/6] Image Event Handler
+[17:34:09]    Payload: <img src=x onerror=alert('XSS')>
+[17:34:09]    🛡️  BLOCKED - Cross-site scripting pattern detected
+[17:34:10] 
+[Test 3/6] SVG Onload
+[17:34:10]    Payload: <svg/onload=alert('XSS')>
+[17:34:15]    ❌ Error: HTTPConnectionPool(host='172.20.0.10', port=5000):
+[17:34:16] 
+[Test 4/6] JavaScript Protocol
+[17:34:16]    Payload: javascript:alert('XSS')
+[17:34:21]    ❌ Error: HTTPConnectionPool(host='172.20.0.10', port=5000):
+[17:34:22] 
+[Test 5/6] IFrame JavaScript
+[17:34:22]    Payload: <iframe src='javascript:alert(1)'>
+[17:34:27]    ❌ Error: HTTPConnectionPool(host='172.20.0.10', port=5000):
+[17:34:28] 
+[Test 6/6] Body Event Handler
+[17:34:28]    Payload: <body onload=alert('XSS')>
+[17:34:33]    ❌ Error: HTTPConnectionPool(host='172.20.0.10', port=5000):
+[17:34:34] 
+==================================================
+[17:34:34] 📊 XSS Test Summary: 0 accepted, 2 blocked

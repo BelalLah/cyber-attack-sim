@@ -1,134 +1,414 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Cyber Attack Simulator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Attack Simulator - Educational Security Platform</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Arial, sans-serif; background: #0d1117; color: #c9d1d9; }
-        .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
         
-        header { background: linear-gradient(135deg, #1a2332 0%, #0d1117 100%); padding: 30px; border-radius: 10px; margin-bottom: 30px; border: 1px solid #30363d; }
-        h1 { color: #58a6ff; font-size: 36px; margin-bottom: 10px; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0d1117 0%, #1a1f2e 100%);
+            color: #c9d1d9;
+            min-height: 100vh;
+        }
+        
+        .container { 
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header */
+        header { 
+            background: linear-gradient(135deg, #1a2332 0%, #0d1117 100%);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border: 1px solid #30363d;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 { 
+            color: #58a6ff;
+            font-size: 36px;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(88, 166, 255, 0.3);
+        }
+        
         h1::before { content: "🛡️ "; }
-        .subtitle { color: #8b949e; font-size: 16px; }
         
-        .network-diagram { background: #161b22; padding: 20px; border-radius: 10px; margin-bottom: 30px; border: 1px solid #30363d; }
-        .network-diagram h3 { color: #58a6ff; margin-bottom: 15px; }
-        .machines { display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; }
-        .machine { background: #0d1117; border: 2px solid #30363d; border-radius: 8px; padding: 15px 25px; margin: 10px; min-width: 200px; }
+        .subtitle { 
+            color: #8b949e;
+            font-size: 16px;
+        }
+        
+        /* Network Diagram */
+        .network-diagram { 
+            background: #161b22;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border: 1px solid #30363d;
+        }
+        
+        .network-diagram h3 { 
+            color: #58a6ff;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        
+        .machines { 
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .machine { 
+            background: #0d1117;
+            border: 2px solid #30363d;
+            border-radius: 10px;
+            padding: 20px 30px;
+            min-width: 200px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        
+        .machine:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+        
         .machine.attacker { border-color: #f85149; }
         .machine.victim { border-color: #58a6ff; }
         .machine.controller { border-color: #3fb950; }
-        .machine-name { font-weight: bold; font-size: 14px; margin-bottom: 5px; }
-        .machine-ip { color: #8b949e; font-size: 12px; font-family: monospace; }
-        .arrow { color: #f85149; font-size: 30px; margin: 0 20px; }
         
-        .attack-panel { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 30px; }
-        .attack-card { background: #161b22; border: 1px solid #30363d; border-radius: 10px; padding: 25px; transition: all 0.3s; cursor: pointer; }
-        .attack-card:hover { transform: translateY(-5px); border-color: #58a6ff; box-shadow: 0 8px 16px rgba(88, 166, 255, 0.1); }
-        .attack-card h3 { color: #f85149; margin-bottom: 10px; font-size: 20px; }
-        .attack-card.sql h3 { color: #f0883e; }
-        .attack-card.portscan h3 { color: #a371f7; }
-        .attack-card p { color: #8b949e; font-size: 14px; line-height: 1.5; }
-        .attack-icon { font-size: 40px; margin-bottom: 10px; }
-        
-        .status-bar { background: #161b22; padding: 15px 25px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #30363d; display: flex; justify-content: space-between; align-items: center; }
-        .status-bar.running { border-color: #f85149; background: rgba(248, 81, 73, 0.1); }
-        .status-text { font-size: 16px; font-weight: bold; }
-        .status-indicator { width: 12px; height: 12px; border-radius: 50%; background: #3fb950; margin-right: 10px; display: inline-block; }
-        .status-indicator.running { background: #f85149; animation: pulse 1s infinite; }
-        
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
+        .machine-name { 
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 8px;
         }
         
-        .logs-container { background: #0d1117; border: 1px solid #30363d; border-radius: 10px; overflow: hidden; }
-        .logs-header { background: #161b22; padding: 15px 25px; border-bottom: 1px solid #30363d; }
-        .logs-header h3 { color: #58a6ff; font-size: 18px; }
-        #logs { background: #000000; padding: 20px; height: 500px; overflow-y: auto; font-family: 'Courier New', monospace; font-size: 13px; line-height: 1.6; color: #3fb950; }
-        .log-entry { margin-bottom: 3px; }
+        .machine-ip { 
+            color: #8b949e;
+            font-size: 13px;
+            font-family: 'Courier New', monospace;
+        }
         
-        ::-webkit-scrollbar { width: 10px; }
+        .arrow { 
+            color: #f85149;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        
+        /* Attack Panel */
+        .attack-panel { 
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .attack-card { 
+            background: #161b22;
+            border: 2px solid #30363d;
+            border-radius: 12px;
+            padding: 25px;
+            transition: all 0.3s;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .attack-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #f85149, #ff7b72);
+            transform: scaleX(0);
+            transition: transform 0.3s;
+        }
+        
+        .attack-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .attack-card:hover { 
+            transform: translateY(-5px);
+            border-color: #58a6ff;
+            box-shadow: 0 8px 16px rgba(88, 166, 255, 0.2);
+        }
+        
+        .attack-card.sql::before { background: linear-gradient(90deg, #f0883e, #ffa657); }
+        .attack-card.xss::before { background: linear-gradient(90deg, #a371f7, #b392f0); }
+        .attack-card.portscan::before { background: linear-gradient(90deg, #56d364, #7ee787); }
+        
+        .attack-card h3 { 
+            color: #f85149;
+            margin: 10px 0;
+            font-size: 20px;
+        }
+        
+        .attack-card.sql h3 { color: #f0883e; }
+        .attack-card.xss h3 { color: #a371f7; }
+        .attack-card.portscan h3 { color: #56d364; }
+        
+        .attack-card p { 
+            color: #8b949e;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .attack-icon { 
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        
+        /* Status Bar */
+        .status-bar { 
+            background: #161b22;
+            padding: 20px 25px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s;
+        }
+        
+        .status-bar.running { 
+            border-color: #f85149;
+            background: rgba(248, 81, 73, 0.1);
+        }
+        
+        .status-text { 
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .status-indicator { 
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #3fb950;
+            box-shadow: 0 0 8px rgba(63, 185, 80, 0.5);
+        }
+        
+        .status-indicator.running { 
+            background: #f85149;
+            animation: pulse 1s infinite;
+            box-shadow: 0 0 12px rgba(248, 81, 73, 0.8);
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(1.1); }
+        }
+        
+        .stop-btn {
+            background: #f85149;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .stop-btn:hover {
+            background: #ff6b6b;
+            transform: scale(1.05);
+        }
+        
+        /* Logs Container */
+        .logs-container { 
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        
+        .logs-header { 
+            background: #161b22;
+            padding: 18px 25px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logs-header h3 { 
+            color: #58a6ff;
+            font-size: 18px;
+        }
+        
+        .clear-logs-btn {
+            background: #30363d;
+            color: #c9d1d9;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        
+        .clear-logs-btn:hover {
+            background: #484f58;
+        }
+        
+        #logs { 
+            background: #000000;
+            padding: 20px;
+            height: 500px;
+            overflow-y: auto;
+            font-family: 'Courier New', Consolas, monospace;
+            font-size: 13px;
+            line-height: 1.8;
+            color: #3fb950;
+        }
+        
+        .log-entry { 
+            margin-bottom: 4px;
+            padding: 2px 0;
+        }
+        
+        .log-entry:hover {
+            background: rgba(88, 166, 255, 0.05);
+        }
+        
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 12px; }
         ::-webkit-scrollbar-track { background: #161b22; }
-        ::-webkit-scrollbar-thumb { background: #30363d; border-radius: 5px; }
+        ::-webkit-scrollbar-thumb { 
+            background: #30363d;
+            border-radius: 6px;
+        }
         ::-webkit-scrollbar-thumb:hover { background: #484f58; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .machines { flex-direction: column; }
+            .arrow { transform: rotate(90deg); }
+            .attack-panel { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>Cyber Attack Simulator</h1>
-            <p class="subtitle">Educational Security Testing Environment - Real Container Network</p>
+            <p class="subtitle">Educational Security Testing Environment - Real Container Network | Docker-Based Penetration Testing Lab</p>
         </header>
         
         <div class="network-diagram">
-            <h3>📡 Network Topology</h3>
+            <h3>📡 Network Topology - Isolated Attack Environment</h3>
             <div class="machines">
                 <div class="machine controller">
                     <div class="machine-name">🎮 Controller</div>
-                    <div class="machine-ip">172.20.0.5</div>
+                    <div class="machine-ip">{{ machines.controller.ip }}</div>
                 </div>
                 <div class="arrow">→</div>
                 <div class="machine attacker">
                     <div class="machine-name">⚔️ Attacker</div>
-                    <div class="machine-ip">172.20.0.100</div>
+                    <div class="machine-ip">{{ machines.attacker.ip }}</div>
                 </div>
                 <div class="arrow">→</div>
                 <div class="machine victim">
                     <div class="machine-name">🎯 Victim Server</div>
-                    <div class="machine-ip">172.20.0.10:5000</div>
+                    <div class="machine-ip">{{ machines.victim.ip }}:{{ machines.victim.port }}</div>
                 </div>
             </div>
+            <div style="text-align: center; margin-top: 20px;">
+        	<a href="http://{{ machines.victim.ip }}:{{ machines.victim.port }}/login-form" 
+           	target="_blank" 
+           	style="color: #58a6ff; text-decoration: none; font-weight: bold;">
+            	🔗 Victim Login-Seite öffnen (für manuelle Tests)
+               </a>
+    	   </div>
         </div>
+        
         
         <div class="attack-panel">
             <div class="attack-card ddos" onclick="startAttack('ddos')">
                 <div class="attack-icon">🌐</div>
                 <h3>DDoS Attack</h3>
-                <p>Distributed Denial of Service - Flood target with massive traffic to overwhelm resources and cause service disruption.</p>
+                <p>Distributed Denial of Service - Overwhelm the target with massive traffic to exhaust server resources and cause service disruption. Tests rate limiting and connection handling.</p>
             </div>
             
             <div class="attack-card sql" onclick="startAttack('sql')">
                 <div class="attack-icon">💉</div>
                 <h3>SQL Injection</h3>
-                <p>Database Exploitation - Inject malicious SQL queries to bypass authentication and extract sensitive data.</p>
+                <p>Database Exploitation - Inject malicious SQL queries to bypass authentication, extract sensitive data, or manipulate database contents. Tests input validation and WAF rules.</p>
+            </div>
+            
+            <div class="attack-card xss" onclick="startAttack('xss')">
+                <div class="attack-icon">🔓</div>
+                <h3>XSS Attack</h3>
+                <p>Cross-Site Scripting - Inject malicious scripts into web pages to steal user data, hijack sessions, or deface websites. Tests output encoding and CSP policies.</p>
             </div>
             
             <div class="attack-card portscan" onclick="startAttack('portscan')">
                 <div class="attack-icon">🔍</div>
                 <h3>Port Scan</h3>
-                <p>Network Reconnaissance - Scan target ports to identify running services and potential vulnerabilities.</p>
+                <p>Network Reconnaissance - Scan target ports to identify running services, open ports, and potential attack vectors. Essential first step in penetration testing.</p>
+            </div>
+            <div class="attack-card bruteforce" onclick="startAttack('bruteforce')">
+                <div class="attack-icon">🔑</div>
+                <h3>Brute-Force Login</h3>
+                <p>
+                    Repeated password guessing against the login form.
+                    Shows account/IP lockout and how the firewall reacts to abusive authentication behavior.
+                </p>
             </div>
         </div>
         
         <div class="status-bar" id="statusBar">
-            <div>
+            <div class="status-text">
                 <span class="status-indicator" id="statusIndicator"></span>
-                <span class="status-text" id="statusText">Status: Idle</span>
+                <span id="statusText">Status: Idle - Ready to launch attacks</span>
             </div>
-            <div id="attackInfo" style="color: #8b949e; font-size: 14px;"></div>
+            <div>
+                <span id="attackInfo" style="color: #8b949e; font-size: 14px; margin-right: 15px;"></span>
+                <button class="stop-btn" id="stopBtn" onclick="stopAttack()" style="display: none;">⏹ Stop Attack</button>
+            </div>
         </div>
         
         <div class="logs-container">
             <div class="logs-header">
                 <h3>📋 Activity Logs - Real-time Attack Monitoring</h3>
+                <button class="clear-logs-btn" onclick="clearLogs()">Clear Logs</button>
             </div>
-            <div id="logs">Waiting for attack to start...</div>
+            <div id="logs">Waiting for attack to start... Click on any attack card above to begin simulation.</div>
         </div>
     </div>
     
     <script>
         let polling = false;
         
+        const attackNames = {
+            'ddos': 'DDoS Attack',
+            'sql': 'SQL Injection',
+            'xss': 'XSS Attack',
+            'bruteforce' : 'Brute-Force Login',
+            'portscan': 'Port Scan'
+        };
+        
         function startAttack(type) {
-            const attackNames = {
-                'ddos': 'DDoS Attack',
-                'sql': 'SQL Injection',
-                'portscan': 'Port Scan'
-            };
-            
-            document.getElementById('logs').innerHTML = `Initializing ${attackNames[type]}...\n`;
+            const logsDiv = document.getElementById('logs');
+            logsDiv.innerHTML = `Initializing ${attackNames[type]}...\nConnecting to target systems...\n`;
             
             fetch('/api/start_attack', {
                 method: 'POST',
@@ -137,14 +417,32 @@
             })
             .then(r => r.json())
             .then(data => {
-                updateStatus(true, attackNames[type]);
-                if (!polling) {
-                    polling = true;
-                    pollStatus();
+                if (data.error) {
+                    logsDiv.innerHTML += `Error: ${data.error}\n`;
+                } else {
+                    updateStatus(true, attackNames[type]);
+                    if (!polling) {
+                        polling = true;
+                        pollStatus();
+                    }
                 }
             })
             .catch(err => {
-                document.getElementById('logs').innerHTML += `Error: ${err}\n`;
+                logsDiv.innerHTML += `Connection Error: ${err}\n`;
+            });
+        }
+        
+        function stopAttack() {
+            fetch('/api/stop_attack', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'}
+            })
+            .then(r => r.json())
+            .then(data => {
+                document.getElementById('logs').innerHTML += '\n[SYSTEM] Attack stop requested by user...\n';
+            })
+            .catch(err => {
+                console.error('Error stopping attack:', err);
             });
         }
         
@@ -153,17 +451,20 @@
             const statusText = document.getElementById('statusText');
             const statusIndicator = document.getElementById('statusIndicator');
             const attackInfo = document.getElementById('attackInfo');
+            const stopBtn = document.getElementById('stopBtn');
             
             if (running) {
                 statusBar.classList.add('running');
                 statusIndicator.classList.add('running');
                 statusText.textContent = 'Status: Attack in Progress';
                 attackInfo.textContent = `Running: ${attackType}`;
+                stopBtn.style.display = 'inline-block';
             } else {
                 statusBar.classList.remove('running');
                 statusIndicator.classList.remove('running');
-                statusText.textContent = 'Status: Idle';
+                statusText.textContent = 'Status: Idle - Ready to launch attacks';
                 attackInfo.textContent = '';
+                stopBtn.style.display = 'none';
             }
         }
         
@@ -173,7 +474,7 @@
             .then(data => {
                 const logsDiv = document.getElementById('logs');
                 logsDiv.innerHTML = data.logs.map(log => 
-                    `<div class="log-entry">${log}</div>`
+                    `<div class="log-entry">${escapeHtml(log)}</div>`
                 ).join('');
                 logsDiv.scrollTop = logsDiv.scrollHeight;
                 
@@ -183,8 +484,36 @@
                     updateStatus(false);
                     polling = false;
                 }
+            })
+            .catch(err => {
+                console.error('Polling error:', err);
+                polling = false;
             });
         }
+        
+        function clearLogs() {
+            document.getElementById('logs').innerHTML = 'Logs cleared. Waiting for next attack...\n';
+        }
+        
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+        
+        // Auto-refresh metrics every 5 seconds
+        setInterval(() => {
+            if (!polling) {
+                fetch('/api/metrics')
+                .then(r => r.json())
+                .then(data => {
+                    // Could display metrics in UI if needed
+                })
+                .catch(err => {
+                    // Silent fail
+                });
+            }
+        }, 5000);
     </script>
 </body>
 </html>

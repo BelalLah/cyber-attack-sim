@@ -1,0 +1,58 @@
+============================================================
+Attack Type: DDoS_Machine_Kill
+Timestamp: 2025-10-29_20-24-48
+Target: :5000
+============================================================
+
+[20:24:27] 🔴 ATTACK INITIATED: Machine-Kill DDoS Attack
+[20:24:27] Target: Victim Server (:5000)
+[20:24:27] Objective: Overwhelm system resources and force crash
+[20:24:27] Attack Pattern: High-intensity flood (300 req/s)
+[20:24:27] 
+[20:24:27] ⚡ Wave 1/10: Launching 300 concurrent requests...
+[20:24:27] ⚠️  WARNING: Victim server becoming unresponsive...
+[20:24:27]    Wave 1: 0 delivered, 0 blocked, 300 failed (12160 req/s)
+[20:24:27] 🔥 CRITICAL DAMAGE: 300/300 requests failed - System collapsing!
+[20:24:28] ⚡ Wave 2/10: Launching 300 concurrent requests...
+[20:24:28]    Wave 2: 0 delivered, 0 blocked, 300 failed (13674 req/s)
+[20:24:28] 🔥 CRITICAL DAMAGE: 300/300 requests failed - System collapsing!
+[20:24:29] ⚡ Wave 3/10: Launching 300 concurrent requests...
+[20:24:29]    Wave 3: 0 delivered, 0 blocked, 300 failed (12928 req/s)
+[20:24:29] 🔥 CRITICAL DAMAGE: 300/300 requests failed - System collapsing!
+[20:24:29] ⚡ Wave 4/10: Launching 300 concurrent requests...
+[20:24:29]    Wave 4: 0 delivered, 0 blocked, 300 failed (9829 req/s)
+[20:24:29] 🔥 CRITICAL DAMAGE: 300/300 requests failed - System collapsing!
+[20:24:30] ⚡ Wave 5/10: Launching 300 concurrent requests...
+[20:24:30]    Wave 5: 0 delivered, 0 blocked, 300 failed (12061 req/s)
+[20:24:30] 🔥 CRITICAL DAMAGE: 300/300 requests failed - System collapsing!
+[20:24:30] ⚡ Wave 6/10: Launching 300 concurrent requests...
+[20:24:30]    Wave 6: 0 delivered, 0 blocked, 300 failed (18935 req/s)
+[20:24:30] 🔥 CRITICAL DAMAGE: 300/300 requests failed - System collapsing!
+[20:24:31] ⚡ Wave 7/10: Launching 300 concurrent requests...
+[20:24:31]    Wave 7: 0 delivered, 0 blocked, 300 failed (19173 req/s)
+[20:24:31] 🔥 CRITICAL DAMAGE: 300/300 requests failed - System collapsing!
+[20:24:31] ⚡ Wave 8/10: Launching 300 concurrent requests...
+[20:24:31]    Wave 8: 0 delivered, 0 blocked, 300 failed (19260 req/s)
+[20:24:31] 🔥 CRITICAL DAMAGE: 300/300 requests failed - System collapsing!
+[20:24:32] ⚡ Wave 9/10: Launching 300 concurrent requests...
+[20:24:32]    Wave 9: 0 delivered, 0 blocked, 300 failed (11748 req/s)
+[20:24:32] 🔥 CRITICAL DAMAGE: 300/300 requests failed - System collapsing!
+[20:24:32] ⚡ Wave 10/10: Launching 300 concurrent requests...
+[20:24:32]    Wave 10: 0 delivered, 0 blocked, 300 failed (20273 req/s)
+[20:24:32] 🔥 CRITICAL DAMAGE: 300/300 requests failed - System collapsing!
+[20:24:33] 
+[20:24:33] ⏳ Monitoring victim status for 15 seconds...
+[20:24:48] 
+[20:24:48] ==================================================
+[20:24:48] 📊 ATTACK SUMMARY
+[20:24:48] ==================================================
+[20:24:48] Total Requests Sent: 3000
+[20:24:48] Successfully Delivered: 0 (0.0%)
+[20:24:48] Blocked by Firewall: 0
+[20:24:48] Failed/Timeout: 3000
+[20:24:48] Victim Final Status: CRASHING
+[20:24:48] 
+[20:24:48] 🎯 ATTACK SUCCESSFUL: Victim system overwhelmed!
+[20:24:48] 💀 Target machine forced to crash and reboot
+[20:24:48] 
+[20:24:48] ⏱️  Attack Duration: 20.25 seconds

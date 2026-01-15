@@ -1,0 +1,35 @@
+============================================================
+Attack Type: BruteForce
+Timestamp: 2026-01-04_19-26-26
+Target: 172.20.0.10:5000
+============================================================
+
+[19:26:23] 🔴 ATTACK INITIATED: Brute-Force Login
+[19:26:23] Target: Victim Server (172.20.0.10:5000/login)
+[19:26:23] Goal: Show repeated login attempts, lockout and firewall IP blocking.
+
+[19:26:23] Attempt 1: admin:123456
+[19:26:23] ✗ Failed: invalid or rejected
+[19:26:23] Attempt 2: admin:password
+[19:26:23] ✗ Failed: invalid or rejected
+[19:26:24] Attempt 3: admin:admin
+[19:26:24] ✗ Failed: invalid or rejected
+[19:26:24] Attempt 4: admin:admin123
+[19:26:24] ✅ SUCCESS: valid credentials admin:admin123
+[19:26:24] Attempt 5: admin:pass123
+[19:26:24] ✗ Failed: invalid or rejected
+[19:26:24] Attempt 6: user1:123456
+[19:26:24] ✗ Failed: invalid or rejected
+[19:26:25] Attempt 7: user1:password
+[19:26:25] ✗ Failed: invalid or rejected
+[19:26:25] Attempt 8: user1:admin
+[19:26:25] ✗ Failed: invalid or rejected
+[19:26:25] Attempt 9: user1:admin123
+[19:26:25] ✗ Failed: invalid or rejected
+[19:26:26] Attempt 10: user1:pass123
+[19:26:26] ✅ SUCCESS: valid credentials user1:pass123
+[19:26:26] 
+📊 Brute-force summary:
+[19:26:26]    Attempts: 10
+[19:26:26]    Successful logins: 2
+[19:26:26]    Blocking events: 0

